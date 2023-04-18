@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/west-west/static/css/main.4bb67605.css",
-    "main.js": "/west-west/static/js/main.eda226be.js",
-    "static/js/787.9fbb2592.chunk.js": "/west-west/static/js/787.9fbb2592.chunk.js",
-    "static/media/west-west-logo.png": "/west-west/static/media/west-west-logo.2b71e913caa956c3c65c.png",
-    "static/media/blue-law.jpg": "/west-west/static/media/blue-law.d4b30a4c6104f3879021.jpg",
-    "static/media/scales.png": "/west-west/static/media/scales.0f6847c9af9f194908bf.png",
-    "static/media/small-logo.png": "/west-west/static/media/small-logo.29e69203f77b265d5088.png",
-    "index.html": "/west-west/index.html",
-    "main.4bb67605.css.map": "/west-west/static/css/main.4bb67605.css.map",
-    "main.eda226be.js.map": "/west-west/static/js/main.eda226be.js.map",
-    "787.9fbb2592.chunk.js.map": "/west-west/static/js/787.9fbb2592.chunk.js.map"
+    "main.css": "/west-west-react/static/css/main.4bb67605.css",
+    "main.js": "/west-west-react/static/js/main.8c93b04e.js",
+    "static/js/787.7f76e79d.chunk.js": "/west-west-react/static/js/787.7f76e79d.chunk.js",
+    "static/media/west-west-logo.png": "/west-west-react/static/media/west-west-logo.2b71e913caa956c3c65c.png",
+    "static/media/blue-law.jpg": "/west-west-react/static/media/blue-law.d4b30a4c6104f3879021.jpg",
+    "static/media/scales.png": "/west-west-react/static/media/scales.0f6847c9af9f194908bf.png",
+    "static/media/small-logo.png": "/west-west-react/static/media/small-logo.29e69203f77b265d5088.png",
+    "index.html": "/west-west-react/index.html",
+    "main.4bb67605.css.map": "/west-west-react/static/css/main.4bb67605.css.map",
+    "main.8c93b04e.js.map": "/west-west-react/static/js/main.8c93b04e.js.map",
+    "787.7f76e79d.chunk.js.map": "/west-west-react/static/js/787.7f76e79d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4bb67605.css",
-    "static/js/main.eda226be.js"
+    "static/js/main.8c93b04e.js"
   ]
 }
