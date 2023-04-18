@@ -1,0 +1,358 @@
+* {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+:root {
+  font-family: optima, sans-serif;
+  overflow-x: hidden;
+  --primary: #8d0801;
+  --secondary: rgba(255, 230, 167, 1);
+  --tertiary:rgba(67, 40, 24, 1);
+  --bg: #595959;
+  --light: #fafafa;
+  --dark: #000000;
+  --darker: #111111;
+  --error: rgb(228, 46, 1);
+  
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nav-container {
+  justify-content: space-between;
+}
+
+.nav-logo {
+  margin: auto;
+}
+
+.navActive {
+  color: var(--light);
+}
+
+.NavItem:active {
+  background-color: var(--light);
+}
+
+.navActive {
+  color: var(--light);
+}
+
+.nav-text {
+  text-decoration: none;
+  color: white;
+  padding-top: 2vh;
+  font-size: larger;
+  box-sizing:content-box;
+}
+
+.nav-text:hover {
+  color: #FFE6A7;
+}
+
+NavLink {
+  text-decoration: none;
+  
+}
+
+.nav {
+  text-decoration: none;
+}
+
+.footer {
+  
+  border-top: solid 5px var(--tertiary);
+  justify-content: center;
+}
+
+.footer-text {
+  text-align: left;
+  text-decoration: none;
+  padding-bottom: 1vh;
+  justify-content: space-evenly;
+
+  color: #FFE6A7;
+}
+
+.foot-hov:hover {
+  color: white;
+}
+
+.scales {
+  width: 12vw;
+  
+}
+
+.icon-w {
+  width: 8vw;
+  height: auto;
+}
+
+.hero-img {
+  min-width: 200px;
+}
+
+.article {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
+.header {
+  font-size: large;
+  color: white;
+  text-align: left;
+  width: 30vw;
+}
+
+.title {
+  border-bottom: solid 3px #BB9457;
+  margin: 0 3vw;
+  padding-top: 2vh
+}
+
+.text {
+  padding: 2vh 1vw;
+}
+
+.article {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hover {
+  width: 45vw;
+}
+
+.picture {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+.hero-border {
+  border: solid 3px var(--secondary);
+  border-radius: 10px;
+  width:100%
+}
+
+.header {
+  font-size: large;
+  background-color:rgba(111, 29, 27, .75) !important;
+  color: white !important;
+  box-shadow: 10px 10px black;
+  text-align: center;
+  position: absolute;
+  top: .5;
+  bottom: 0;
+  left: 0;
+  right: 1;
+  height: fit-content;
+  margin: 0 0 10vh 4vw;
+  width: 50vw;
+  min-width:300px;
+  
+}
+
+.contact-container {
+  padding: 0;
+  text-align: right;
+  
+}
+
+.contact-container h1 {
+  text-align: center;
+}
+
+.contact-card {
+  font-size: large;
+  background-color: #6F1D1B !important;
+  color: white !important;
+  width:fit-content;
+  min-width: 250px;
+  padding: 1vh 2vw;
+  border: solid 3px #BB9457;
+  margin: auto;
+  
+}
+
+.contact-field {
+  width: 26vw;
+  margin-top: 2vh;
+  min-width: 150px;
+  
+}
+
+.home-container {
+  justify-content:space-evenly;
+  
+}
+
+.info-card {
+  background-color: #432818 !important;
+  color: white !important;
+  margin: auto;
+}
+
+.separator {
+  background-color: #6F1D1B;
+  box-sizing: content-boxs;
+  align-items: center;
+  padding: 2vh;
+  font-size:4vw;
+  color: white;
+  
+}
+
+.separator-text {
+  border: solid 8px #BB9457;
+  border-radius: 10px;
+  background-clip:content-box;
+  
+}
+
+.spacing {
+  margin-bottom: 2vh;
+}
+
+/* This Section is for reviews carosel css */
+.reviews-bg {
+  background-color: var(--secondary);
+  color: #432818 !important;
+  height: fit-content;
+  padding-bottom: 6vh;
+  border-top: solid 3px var(--primary);
+  margin-top: 2vh;
+}
+
+.reviews-title {
+  width: 20vw;
+  border-bottom: solid 3px var(--primary);
+  margin: 1vh auto;
+  
+}
+
+.review-conainer {
+  color: #432818;
+}
+
+.reviews-bg h2 {
+  padding-top: 2vh;
+}
+
+.review-text {
+  font-size: larger;
+  width: 50vw;
+  margin: auto;
+  padding-bottom: 2vh;
+}
+
+/*  */
+
+.hours-border {
+  background-color: var(--primary);
+  border: solid 3px var(--secondary);
+  border-radius: 10px;
+
+  padding: 2px;
+  color: var(--light);
+
+  font-size:3vh;
+  padding: 8vh 6vw;
+  width: 35vw;
+  height: 35vw;
+  min-height: 700px;
+
+}
+
+.hours-border h3 {
+  font-size: 4vh;
+  border-bottom: solid 3px var(--secondary);
+
+  margin: auto;
+}
+
+iframe {
+  border: solid 3px var(--tertiary);
+  border-radius: 10px;
+  box-shadow: 10px black;
+  /* margin: 1vh auto 0 1vh !important; */
+
+  width: 35vw;
+  height: 35vw;
+  min-width: 275px;
+  
+  
+}
+
+.frame-container {
+  justify-content:space-evenly;
+  
+  margin: auto;
+}
+
+.fixed-bg {
+  background-image: url(https://github.com/MichaelS32/West-West/blob/main/west-west-web/src/assets/san-antonio-skyline2.jpg?raw=true);
+  /* Set a specified height, or the minimum height for the background image */
+  min-height: 200px;
+
+  /*  Set background image to fixed (don't scroll along with the page) */
+  background-attachment: fixed;
+
+  /* Center the background image */
+  background-position: center;
+
+  /* Set the background image to no repeat */
+  background-repeat: no-repeat;
+
+  /* Scale the background image to be as large as possible */
+  background-size: cover;
+
+  margin: 3vh 0;
+
+  border-top: solid 3px var(--primary);
+
+  border-bottom: solid 3px var(--primary);
+}
