@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import { Box, Paper, Grid } from'@mui/material';
+import { Box, Paper, Grid } from '@mui/material';
 import logo from '../../assets/west-west-logo.png';
 
 
@@ -25,9 +25,9 @@ function NavBar(props) {
                         <div sx={{
                             width: '8vw',
                             height: '10vh',
-                            
+
                         }}>
-                            <img style={{ width: '15vw', height: '10vh', padding: 6, float: 'left' }} src={logo} alt='West and West Attorney at law logo' />
+                            <img style={{ minWidth: '200px', width: '15vw', height: 'auto', padding: 6, float: 'left' }} src={logo} alt='West and West Attorney at law logo' />
                         </div>
                     </Link>
                 </Grid>
@@ -62,7 +62,7 @@ function NavBar(props) {
                     <NavLink exact='true' className={splitLocation[1] === "practice" ? "active" : "nav"} to='/practice'>
                         <h2 className={splitLocation[1] === 'practice' ? "active" : 'nav hovering nav-text'} href="#practice">
 
-                            Practice Areas
+                            Practice
 
                         </h2>
                     </NavLink>
@@ -77,7 +77,7 @@ function NavBar(props) {
                     </NavLink>
                 </Grid>
             </Grid>
-            
+
         </Box>
     );
 }

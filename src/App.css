@@ -1,19 +1,20 @@
 * {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+
 :root {
   font-family: optima, sans-serif;
   overflow-x: hidden;
   --primary: #8d0801;
   --secondary: rgba(255, 230, 167, 1);
-  --tertiary:rgba(67, 40, 24, 1);
+  --tertiary: rgba(67, 40, 24, 1);
   --bg: #595959;
   --light: #fafafa;
   --dark: #000000;
   --darker: #111111;
   --error: rgb(228, 46, 1);
-  
+
 }
 
 .App {
@@ -50,6 +51,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -61,6 +63,7 @@
 
 .nav-logo {
   margin: auto;
+  min-width: 200px;
 }
 
 .navActive {
@@ -79,8 +82,8 @@
   text-decoration: none;
   color: white;
   padding-top: 2vh;
-  font-size: larger;
-  box-sizing:content-box;
+  font-size: calc(75% + .5vw);
+  box-sizing: content-box;
 }
 
 .nav-text:hover {
@@ -89,7 +92,7 @@
 
 NavLink {
   text-decoration: none;
-  
+
 }
 
 .nav {
@@ -97,7 +100,7 @@ NavLink {
 }
 
 .footer {
-  
+
   border-top: solid 5px var(--tertiary);
   justify-content: center;
 }
@@ -117,7 +120,7 @@ NavLink {
 
 .scales {
   width: 12vw;
-  
+
 }
 
 .icon-w {
@@ -148,11 +151,15 @@ NavLink {
 .title {
   border-bottom: solid 3px #BB9457;
   margin: 0 3vw;
-  padding-top: 2vh
+  padding-top: 2vh;
+  font-size: calc(100% + 1vw);
+
 }
 
 .text {
   padding: 2vh 1vw;
+  font-size: calc(90% + .5vw);
+
 }
 
 .article {
@@ -175,12 +182,12 @@ NavLink {
 .hero-border {
   border: solid 3px var(--secondary);
   border-radius: 10px;
-  width:100%
+  width: 100%
 }
 
 .header {
   font-size: large;
-  background-color:rgba(111, 29, 27, .75) !important;
+  background-color: rgba(111, 29, 27, .75) !important;
   color: white !important;
   box-shadow: 10px 10px black;
   text-align: center;
@@ -192,42 +199,44 @@ NavLink {
   height: fit-content;
   margin: 0 0 10vh 4vw;
   width: 50vw;
-  min-width:300px;
-  
+  min-width: 300px;
+
 }
 
 .contact-container {
   padding: 0;
   text-align: right;
-  
+
 }
 
 .contact-container h1 {
   text-align: center;
+  font-size: calc(100% + 2vw);
+
 }
 
 .contact-card {
   font-size: large;
   background-color: #6F1D1B !important;
   color: white !important;
-  width:fit-content;
+  width: fit-content;
   min-width: 250px;
   padding: 1vh 2vw;
   border: solid 3px #BB9457;
   margin: auto;
-  
+
 }
 
 .contact-field {
   width: 26vw;
   margin-top: 2vh;
   min-width: 150px;
-  
+
 }
 
 .home-container {
-  justify-content:space-evenly;
-  
+  justify-content: space-evenly;
+
 }
 
 .info-card {
@@ -241,16 +250,16 @@ NavLink {
   box-sizing: content-boxs;
   align-items: center;
   padding: 2vh;
-  font-size:4vw;
+  font-size: 4vw;
   color: white;
-  
+
 }
 
 .separator-text {
   border: solid 8px #BB9457;
   border-radius: 10px;
-  background-clip:content-box;
-  
+  background-clip: content-box;
+
 }
 
 .spacing {
@@ -271,7 +280,7 @@ NavLink {
   width: 20vw;
   border-bottom: solid 3px var(--primary);
   margin: 1vh auto;
-  
+
 }
 
 .review-conainer {
@@ -292,23 +301,23 @@ NavLink {
 /*  */
 
 .hours-border {
-  background-color: var(--primary);
+  background-color: #6F1D1B;
   border: solid 3px var(--secondary);
   border-radius: 10px;
 
   padding: 2px;
   color: var(--light);
 
-  font-size:3vh;
-  padding: 8vh 6vw;
+  font-size: calc(100% + 1vw);
+  padding: 6vh 6vw;
   width: 35vw;
-  height: 35vw;
-  min-height: 700px;
+  height: fit-content;
+
 
 }
 
 .hours-border h3 {
-  font-size: 4vh;
+  font-size: calc(75% + 2vw);
   border-bottom: solid 3px var(--secondary);
 
   margin: auto;
@@ -323,13 +332,13 @@ iframe {
   width: 35vw;
   height: 35vw;
   min-width: 275px;
-  
-  
+
+
 }
 
 .frame-container {
-  justify-content:space-evenly;
-  
+  justify-content: space-evenly;
+
   margin: auto;
 }
 
