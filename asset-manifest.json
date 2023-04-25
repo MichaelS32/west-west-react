@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/west-west-react/static/css/main.8e3cf9e0.css",
-    "main.js": "/west-west-react/static/js/main.4041d6fa.js",
+    "main.css": "/west-west-react/static/css/main.d72e0136.css",
+    "main.js": "/west-west-react/static/js/main.f84c8ead.js",
     "static/js/787.7f76e79d.chunk.js": "/west-west-react/static/js/787.7f76e79d.chunk.js",
     "static/media/west-west-logo.png": "/west-west-react/static/media/west-west-logo.2b71e913caa956c3c65c.png",
     "static/media/blue-law.jpg": "/west-west-react/static/media/blue-law.d4b30a4c6104f3879021.jpg",
     "static/media/scales.png": "/west-west-react/static/media/scales.0f6847c9af9f194908bf.png",
     "static/media/small-logo.png": "/west-west-react/static/media/small-logo.29e69203f77b265d5088.png",
     "index.html": "/west-west-react/index.html",
-    "main.8e3cf9e0.css.map": "/west-west-react/static/css/main.8e3cf9e0.css.map",
-    "main.4041d6fa.js.map": "/west-west-react/static/js/main.4041d6fa.js.map",
+    "main.d72e0136.css.map": "/west-west-react/static/css/main.d72e0136.css.map",
+    "main.f84c8ead.js.map": "/west-west-react/static/js/main.f84c8ead.js.map",
     "787.7f76e79d.chunk.js.map": "/west-west-react/static/js/787.7f76e79d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e3cf9e0.css",
-    "static/js/main.4041d6fa.js"
+    "static/css/main.d72e0136.css",
+    "static/js/main.f84c8ead.js"
   ]
 }
