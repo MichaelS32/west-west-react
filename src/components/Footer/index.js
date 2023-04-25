@@ -15,16 +15,16 @@ function Footer() {
             backgroundColor: '#6F1D1B'
             }}>
                 <Grid container className={'footer-text'}>
-                    <Grid item className='footer' xs={2}>
+                    <Grid item className='footer txt-left' xs={4}>
                         <p>West & West Attorney at Law</p>
                         <a href='tel:2103402200' className='footer-text foot-hov'>(210) 340-2200</a> <br />
                         <a target="_blank" href='https://goo.gl/maps/b3Tmhkgno2U4hnTx8' className='footer-text foot-hov'>2929 Mossrock,<br/> San Antonio, TX 78230</a>
 
                     </Grid>
-                    <Grid item className='footer' xs={2}>
+                    <Grid item className='footer center-footer' xs={4}>
                         <img className='scales' src={scales} alt='weighing scales' />
                     </Grid>
-                    <Grid item className='footer' xs={2}>
+                    <Grid item className='footer txt-right center-footer' xs={4}>
                         <img className='icon-w' src={icon} alt='west and west icon logo' />
                     </Grid>
                 </Grid>

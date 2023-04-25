@@ -14,21 +14,23 @@ const Home = () => {
                 <div className='hero-border'>
                     <img className='picture hero-img' style={{ width: '100%' }} src={hero} alt='San Antonio Skyline' />
                 </div>
-
-                <Box className='hover'>
-                    <FadeIn className='header'
+                
+                    <Box className='hover'>
+                    
+                        <Paper elevation={4} className={'header'}  >
+                        <FadeIn 
                         from="left"
                         positionOffset={800}
                         triggerOffset={0}
                         delayInMilliseconds={600}
-                    >
-                        <Paper elevation={4} className={'header'}  >
+                        >
                             <h1 className='title'> Short Attention Grabber </h1>
                             <div className='text'>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis volutpat est velit egestas dui. Id donec ultrices tincidunt arcu non sodales. Sit amet consectetur adipiscing elit ut aliquam purus sit amet.</div>
+                        </FadeIn>
                         </Paper>
-                    </FadeIn>
                 </Box>
+                
 
             </div>
             <div className='separator'>
@@ -76,16 +78,16 @@ const Home = () => {
                 </FadeIn>
             </Box>
             <div className='fixed-bg' />
-
-            <Grid container className='frame-container'>
-
-                <Grid item className='hours-border' xs={7} md={5}>
-                    <FadeIn className='hours-border'
-                        from="left"
-                        positionOffset={0}
-                        triggerOffset={0}
+            <FadeIn 
+                        from="bottom"
+                        positionOffset={400}
+                        triggerOffset={200}
                         delayInMilliseconds={400}
                     >
+            <Grid container className='frame-container'>
+            
+                <Grid item className='hours-border' xs={7} md={4}>
+                    
                         <h3>Hours of Operation:</h3>
                         <p>Monday - 8:30am - 5:00pm</p>
                         <p>Tuesday - 8:30am - 5:00pm</p>
@@ -93,20 +95,16 @@ const Home = () => {
                         <p>Thursday - 8:30am - 5:00pm</p>
                         <p>Friday - 8:30am - 3:00pm</p>
                         <p>Saturday-Sunday - Closed</p>
-                    </FadeIn>
+                  
                 </Grid>
-
-                <FadeIn
-                    from="right"
-                    positionOffset={400}
-                    triggerOffset={200}
-                    delayInMilliseconds={400}
-                >
-                    <Grid item xs={7} md={5}>
+            
+                
+                    <Grid item xs={7} md={4}>
                         <iframe title='location of west and west' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55534.729136252194!2d-98.59849167165716!3d29.547807358700666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c5e27d12aac55%3A0x52a8cc37abfce462!2sWest%20%26%20West%20Attorney%20at%20Law!5e0!3m2!1sen!2sus!4v1681222952416!5m2!1sen!2sus" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </Grid>
-                </FadeIn>
+                
             </Grid>
+            </FadeIn>
             <Reviews id="reviews" />
 
         </section>

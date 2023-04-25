@@ -1,14 +1,14 @@
 * {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "montserrat", ;
 
 }
 
 :root {
-  font-family: optima, sans-serif;
   overflow-x: hidden;
+  background-color: #ced4da;
   --primary: #8d0801;
   --secondary: rgba(255, 230, 167, 1);
-  --tertiary: rgba(67, 40, 24, 1);
+  --tertiary: #BB9457;
   --bg: #595959;
   --light: #fafafa;
   --dark: #000000;
@@ -100,18 +100,37 @@ NavLink {
 }
 
 .footer {
+  padding-top: 1vh;
+  box-sizing: content-box;
+  margin: auto;
+  justify-self: center;
+  font-size: calc(30% + 1vw);
+  height: fit-content;
 
-  border-top: solid 5px var(--tertiary);
-  justify-content: center;
 }
 
 .footer-text {
-  text-align: left;
+  /* text-align: left; */
   text-decoration: none;
   padding-bottom: 1vh;
-  justify-content: space-evenly;
-
+  justify-content: space-between;
+  align-content: center;
   color: #FFE6A7;
+}
+
+.txt-left {
+  text-align: left;
+  padding-left: 3vw;
+}
+
+.txt-right {
+  text-align: right;
+  padding-right: 3vw;
+
+}
+
+.center-footer {
+  padding-top: 3vh
 }
 
 .foot-hov:hover {
@@ -119,13 +138,15 @@ NavLink {
 }
 
 .scales {
-  width: 12vw;
-
+  width: 8vw;
+  justify-self: auto;
 }
 
 .icon-w {
-  width: 8vw;
-  height: auto;
+  width: 5vw;
+
+  
+
 }
 
 .hero-img {
@@ -225,6 +246,7 @@ NavLink {
   border: solid 3px #BB9457;
   margin: auto;
 
+
 }
 
 .contact-field {
@@ -236,11 +258,12 @@ NavLink {
 
 .home-container {
   justify-content: space-evenly;
+  display: flex;
 
 }
 
 .info-card {
-  background-color: #432818 !important;
+  background-color: #BB9457 !important;
   color: white !important;
   margin: auto;
 }
@@ -264,6 +287,7 @@ NavLink {
 
 .spacing {
   margin-bottom: 2vh;
+  flex: 1;
 }
 
 /* This Section is for reviews carosel css */
@@ -304,21 +328,23 @@ NavLink {
   background-color: #6F1D1B;
   border: solid 3px var(--secondary);
   border-radius: 10px;
-
-  padding: 2px;
   color: var(--light);
+  margin: 0;
+  font-size: calc(50% + 1vw);
+  padding: 2vh 4vw ;
+  min-width: 275px;
+  min-height: 275px;
 
-  font-size: calc(100% + 1vw);
-  padding: 6vh 6vw;
-  width: 35vw;
-  height: fit-content;
+  flex:1;
+  width: 30vw !important;
 
 
 }
 
 .hours-border h3 {
-  font-size: calc(75% + 2vw);
+  font-size: calc(75% + 1vw);
   border-bottom: solid 3px var(--secondary);
+  padding: 2vh 4vw;
 
   margin: auto;
 }
@@ -329,16 +355,18 @@ iframe {
   box-shadow: 10px black;
   /* margin: 1vh auto 0 1vh !important; */
 
-  width: 35vw;
-  height: 35vw;
+  width: 30vw;
+  height: 30vw;
   min-width: 275px;
+  min-height: 275px;
+  flex:1;
 
 
 }
 
 .frame-container {
   justify-content: space-evenly;
-
+  display: flex;
   margin: auto;
 }
 
