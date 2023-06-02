@@ -12,7 +12,7 @@ function Footer() {
             <Box sx={{
             width: '100vw',
             // height: '11vh',
-            backgroundColor: '#6F1D1B'
+            backgroundColor: 'var(--primary)'
             }}>
                 <Grid container className={'footer-text'}>
                     <Grid item className='footer txt-left' xs={4}>

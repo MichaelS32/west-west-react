@@ -1,50 +1,44 @@
 import React from 'react';
 import { Box, Paper, Grid } from '@mui/material';
 import logo from '../../assets/west-west-logo.png';
-import hero from '../../assets/blue-law.jpg';
+import hero from '../../assets/west-west-west-hero.png';
 import Contact from '../Contact';
 import Reviews from '../Reviews';
-import { FadeIn } from 'react-slide-fade-in'
+import Attorney from '../Attorney';
+import { FadeIn } from 'react-slide-fade-in';
+import NavBar from '../NavBar';
 
 
 const Home = () => {
+    const yearsInBusiness = (new Date().getFullYear() - 1947)
     return (
         <section>
             <div className='article'>
                 <div className='hero-border'>
+                    <NavBar />
+
                     <img className='picture hero-img' style={{ width: '100%' }} src={hero} alt='San Antonio Skyline' />
                 </div>
                 
                     <Box className='hover'>
                     
-                        <Paper elevation={4} className={'header'}  >
+                        {/* <Paper elevation={4} className={'header'}  > */}
                         <FadeIn 
-                        from="left"
+                        from=""
                         positionOffset={800}
                         triggerOffset={0}
-                        delayInMilliseconds={600}
+                        delayInMilliseconds={1000}
                         >
-                            <h1 className='title'> Short Attention Grabber </h1>
-                            <div className='text'>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis volutpat est velit egestas dui. Id donec ultrices tincidunt arcu non sodales. Sit amet consectetur adipiscing elit ut aliquam purus sit amet.</div>
+                            <h1 className='header header-title'> A Remarkable History and Tradition. </h1>
+                            {/* <div className='text'> */}
+                                {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis volutpat est velit egestas dui. Id donec ultrices tincidunt arcu non sodales. Sit amet consectetur adipiscing elit ut aliquam purus sit amet.</div> */}
                         </FadeIn>
-                        </Paper>
+                        {/* </Paper> */}
                 </Box>
                 
 
             </div>
-            <div className='separator'>
-                <FadeIn
-                    from="bottom"
-                    positionOffset={0}
-                    triggerOffset={500}
-                    delayInMilliseconds={600}
-                >
-                    <div className='separator-text'>
-                        Serving the San Antonio Community for XX years!
-                    </div>
-                </FadeIn>
-            </div>
+            
             <Box sx={{
                 width: '100vw',
                 marginTop: '4vh',
@@ -58,26 +52,43 @@ const Home = () => {
                     triggerOffset={600}
                     delayInMilliseconds={600}
                 >
-                    <Grid container className='home-container'>
-                        <Grid item className='spacing' xs={8} md={5}>
-                            <Box className=''>
-                                <Paper elevation={3} className={'info-card spacing'}  >
+                            <Box id='about' className='about spacing'>
+                                
                                     <h1 className='title'>
                                         Info Slot
                                     </h1>
                                     <div className='text'>
-                                        Turpis egestas integer eget aliquet nibh. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Vitae suscipit tellus mauris a diam. Non pulvinar neque laoreet suspendisse interdum consectetur. Ipsum a arcu cursus vitae congue mauris rhoncus. Risus in hendrerit gravida rutrum quisque non tellus. Pharetra massa massa ultricies mi. Enim praesent elementum facilisis leo vel fringilla est. Feugiat nisl pretium fusce id velit ut tortor pretium viverra. Neque ornare aenean euismod elementum. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere. Donec ultrices tincidunt arcu non. Amet nisl purus in mollis nunc sed id. Varius duis at consectetur lorem donec massa sapien faucibus et. Molestie at elementum eu facilisis. Nisl rhoncus mattis rhoncus urna. Egestas sed tempus urna et. Scelerisque purus semper eget duis at tellus at urna condimentum.
+                                        Turpis egestas integer eget aliquet nibh. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Vitae suscipit tellus mauris a diam. Non pulvinar neque laoreet suspendisse interdum consectetur. Ipsum a arcu cursus vitae congue mauris rhoncus. Risus in hendrerit gravida rutrum quisque non tellus. Pharetra massa massa ultricies mi. Enim praesent elementum facilisis leo vel fringilla est. Feugiat nisl pretium fusce id velit ut tortor pretium viverra. Neque ornare aenean euismod elementum. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere. Donec ultrices tincidunt arcu non. Amet nisl purus in mollis nunc sed id. Varius duis at consectetur lorem donec massa sapien faucibus et. Molestie at elementum eu facilisis. Nisl rhoncus mattis rhoncus urna. Egestas sed tempus urna et.
                                     </div>
-                                </Paper>
+                                
                             </Box>
-                        </Grid>
-                        <Grid item className='spacing' xs={8} md={5}>
-                            <Contact id="contact" />
-                        </Grid>
-                    </Grid>
                 </FadeIn>
             </Box>
-            <div className='fixed-bg' />
+            <Box sx={{
+                width: '100vw',
+                marginTop: '4vh',
+                // height: '11vh',
+                // backgroundColor: '#6F1D1B'
+            }}
+            >
+                <FadeIn
+                        from="right"
+                        positionOffset={0}
+                        triggerOffset={600}
+                        delayInMilliseconds={600}
+                    >
+                    {/* <Grid container className='home-container'>
+                        <Grid item className='spacing' xs={8} md={5}> */}
+                            <Attorney />
+                        {/* </Grid> */}
+                    {/* </Grid> */}
+                </ FadeIn>
+            </Box>
+            <div className='fixed-bg' >
+                    <div className='separate'>
+                        Serving San Antonio for {yearsInBusiness} years
+                    </div>
+            </div>
             <FadeIn 
                         from="bottom"
                         positionOffset={400}
@@ -105,7 +116,8 @@ const Home = () => {
                 
             </Grid>
             </FadeIn>
-            <Reviews id="reviews" />
+            <Reviews />
+            <Contact  />
 
         </section>
     );

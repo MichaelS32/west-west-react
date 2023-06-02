@@ -17,7 +17,7 @@ function Reviews() {
   };
 
   return (
-    <section className='reviews-bg'>
+    <section id="reviews" className='reviews-bg'>
         <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
         <h2 className='reviews-title'>Reviews</h2>
